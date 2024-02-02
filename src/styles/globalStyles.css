@@ -1,6 +1,11 @@
 @import url(./reset.css);
 @import url(./index.css);
 
+body {
+    height: 100%;
+    width: 100%;
+}
+
 :root {
     --brand-color1: #4C6EF5;
     --brand-color2: #364FC7;
