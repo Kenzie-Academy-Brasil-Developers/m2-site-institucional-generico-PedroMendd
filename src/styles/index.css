@@ -3,7 +3,7 @@ header {
     max-width: 1728px;
     width: 100%;
     display: flex;
-    padding: 1.25rem 14.75rem;
+    padding: 1.25rem clamp(8rem, 5.791rem + 8.295vw, 14.75rem);
     justify-content: space-between;
     background-color: var(--gray-color1);
     border-bottom: solid 2px var(--brand-color1);
@@ -13,7 +13,7 @@ header {
 }
 
 .header__box {
-    max-width: 80%;
+    max-width: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -22,9 +22,9 @@ header {
 }
 
 .header__button {
-    width: 10rem;
-    height: 5rem;
+    width: 15rem;
     font-size: 0.7rem;
+    align-items: center;
     background-color: transparent;
     color: var(--gray-color7);
     border: 1px solid var(--gray-color7); 
@@ -39,7 +39,7 @@ header {
     width: 100%;
     color: var(--gray-color6);
     display: flex;
-    padding: 15.625rem 14.75rem;
+    padding: 15.625rem clamp(8rem, 5.791rem + 8.295vw, 14.75rem);
     flex-direction: column;
     align-items: center;
     gap: 2.75rem;
@@ -93,9 +93,9 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 5.125rem 14.75rem;
+    padding: 5.125rem clamp(8rem, 5.791rem + 8.295vw, 14.75rem);
     margin: 0 auto;
-    align-items: flex-start;
+   
     gap: 2.5rem;
     background-color: var(--gray-color1);
     color: var(--gray-color6);
@@ -122,12 +122,13 @@ header {
 }
 
 .section__about--text {
+    max-width: 1728px;
     color: var(--gray-color5);
     font-size: var(--font-size-text1);
     line-height: var(--line-height-text);
-    text-align: justify;
-    max-width: 48%;
-    width: 100%;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .section__faq {
@@ -136,7 +137,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 5.125rem 14.75rem;
+    padding: 5.125rem clamp(8rem, 5.791rem + 8.295vw, 14.75rem);
     margin: 0 auto;
     gap: 3.5rem;
     color: var(--gray-color6);
@@ -236,8 +237,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 5.125rem 14.75rem;
+    padding: 5.125rem clamp(8rem, 5.791rem + 8.295vw, 14.75rem);
     background-color: var(--gray-color2);
     color: var(--gray-color7);
 }
@@ -249,12 +249,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    justify-content: center;
     gap: 3.5rem;
 }
 
 .section__comments--right {
     display: flex;
     flex-direction: row-reverse;
+    align-content: flex-end;
     width: 36.25rem;
     height: 27.6875rem;
     padding: 10px;
@@ -350,7 +352,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--gray-color1);
-    padding: 1.25rem 14.75rem;
+    padding: 1.25rem clamp(8rem, 5.791rem + 8.295vw, 14.75rem);
 }
 
 .modal__controller {
