@@ -10,7 +10,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    border: solid 2px red;
 }
 
 .header__box {
@@ -54,13 +53,11 @@ header {
     flex-direction: column;
     margin: 0 auto;
     gap:  2.75rem;
-    border: solid 2px red;
 }
 
 .section__banner--title {
     margin: 0 auto;
     font-size: var(--font-size-title1);
-    border: solid 2px red;
 }
 
 .section__banner--text {
